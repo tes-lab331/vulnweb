@@ -1,1 +1,9 @@
-
+body { font-family: sans-serif; background: #1e1e2e; color: #eee; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+nav { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.5rem; }
+nav a { color: #89dceb; text-decoration: none; }
+form { display: flex; flex-direction: column; gap: .5rem; max-width: 400px; }
+input, textarea, button { padding: .5rem; font-size: 1rem; }
+button { background: #89b4fa; border: none; cursor: pointer; }
+.error { color: #f38ba8; }
+pre { background: #11111b; padding: 1rem; overflow-x: auto; }
+code { background: #313244; padding: .1rem .3rem; }
