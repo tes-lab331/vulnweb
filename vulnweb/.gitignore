@@ -1,0 +1,15 @@
+# Database (auto-generated saat app dijalankan)
+vulnweb.db
+
+# File hasil upload saat testing
+uploads/*
+!uploads/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS/editor junk
+.DS_Store
