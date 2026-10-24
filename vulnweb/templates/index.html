@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>VulnWeb</h1>
+<p>Aplikasi latihan pentest. Status login: {{ user or "belum login" }}</p>
+<p>Daftar akun demo: admin/admin123, budi/budi123, siti/siti123</p>
+<ul>
+  <li>/login - SQL Injection</li>
+  <li>/profile?id=1 - IDOR (coba ganti angka id-nya)</li>
+  <li>/guestbook - Stored XSS</li>
+  <li>/reset_password - Broken Auth / Insecure Design</li>
+  <li>/fetch - SSRF</li>
+  <li>/ping - Command Injection</li>
+  <li>/upload - Unrestricted File Upload</li>
+  <li>/load_config - Insecure Deserialization</li>
+</ul>
+{% endblock %}

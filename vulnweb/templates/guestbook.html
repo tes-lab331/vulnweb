@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Guestbook</h1>
+<form method="POST">
+  <input type="text" name="name" placeholder="nama"><br>
+  <textarea name="message" placeholder="pesan"></textarea><br>
+  <button type="submit">Kirim</button>
+</form>
+<hr>
+{% for e in entries %}
+  <p><b>{{ e[0] }}</b>: {{ e[1] | safe }}</p>
+{% endfor %}
+<p>Hint: coba isi pesan dengan &lt;script&gt;alert(1)&lt;/script&gt;</p>
+{% endblock %}

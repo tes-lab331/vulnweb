@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Profile</h1>
+<p>ID: {{ profile[0] }}</p>
+<p>Username: {{ profile[1] }}</p>
+<p>Email: {{ profile[2] }}</p>
+<p>Admin: {{ profile[3] }}</p>
+<p>Lagi login sebagai: {{ me or "guest" }}</p>
+<p>Coba ganti ?id= di URL buat lihat profil user lain tanpa izin.</p>
+{% endblock %}

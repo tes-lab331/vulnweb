@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Ping Tool</h1>
+<form method="POST">
+  <input type="text" name="host" placeholder="contoh: 127.0.0.1"><br>
+  <button type="submit">Ping</button>
+</form>
+{% if output %}<pre>{{ output }}</pre>{% endif %}
+<p>Hint: coba host = <code>127.0.0.1; id</code></p>
+{% endblock %}

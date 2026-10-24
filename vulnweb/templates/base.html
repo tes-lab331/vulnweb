@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>{% block title %}VulnWeb{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<nav>
+  <a href="/">Home</a>
+  <a href="/login">Login</a>
+  <a href="/profile?id=1">Profile</a>
+  <a href="/guestbook">Guestbook</a>
+  <a href="/reset_password">Reset Password</a>
+  <a href="/fetch">Fetch URL</a>
+  <a href="/ping">Ping Tool</a>
+  <a href="/upload">Upload</a>
+  <a href="/load_config">Load Config</a>
+</nav>
+<main>
+{% block content %}{% endblock %}
+</main>
+</body>
+</html>

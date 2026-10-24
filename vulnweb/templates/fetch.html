@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Fetch URL (preview link)</h1>
+<form method="POST">
+  <input type="text" name="url" placeholder="https://..."><br>
+  <button type="submit">Fetch</button>
+</form>
+{% if result %}<pre>{{ result }}</pre>{% endif %}
+<p>Hint SSRF: coba arahkan ke http://127.0.0.1:5000/ atau port internal lain.</p>
+{% endblock %}

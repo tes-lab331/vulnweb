@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Load Config (base64 pickle)</h1>
+<form method="POST">
+  <textarea name="config" placeholder="base64 pickle data di sini"></textarea><br>
+  <button type="submit">Load</button>
+</form>
+{% if result %}<pre>{{ result }}</pre>{% endif %}
+<p>Hint: pickle.loads terhadap data user bisa dipakai buat eksekusi kode arbitrer.</p>
+{% endblock %}
